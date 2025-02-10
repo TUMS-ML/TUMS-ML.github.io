@@ -1,3 +1,5 @@
+ @import url(https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap);
+ 
  * {
      margin: 0;
      padding: 0;
@@ -10,6 +12,7 @@
 
  body {
      background-color: rgb(26, 34, 41);
+     font-family: "Baloo Bhaijaan 2", serif;
  }
 
  body {
@@ -39,6 +42,15 @@
      }
  }
 
+ main {
+     display: flex;
+     width: 100%;
+     flex-direction: column;
+     align-items: center;
+ }
+ main section{
+    max-width: 1160px;
+ }
  /* navbar-st */
  .navbar-st {
      direction: rtl;
@@ -46,6 +58,7 @@
      top: 0;
      display: flex;
      align-items: center;
+     justify-content: center;
      z-index: 1000;
      width: 100%;
      padding: 1.6rem .8rem;
@@ -56,9 +69,11 @@
  .navbar-st ul {
      list-style-type: none;
      display: flex;
-     justify-content: center;
+     justify-content: flex-start;
      gap: 1.5rem;
      margin: 0;
+     width: 1160px;
+    
  }
 
 
@@ -67,6 +82,7 @@
      color: #e3f1f1;
      padding: 1.6rem .8rem;
      transition: background-color 0.3s ease;
+     white-space: nowrap;
  }
 
  .active {
@@ -76,6 +92,11 @@
  /* sections */
  section {
      height: 80vh;
+     width: 100%;
+ }
+
+ #land {
+     height: auto;
  }
 
  .hero {
@@ -345,17 +366,21 @@
      grid-template-columns: repeat(1, minmax(0, 1fr));
      width: 100%;
  }
- .p-b{
-    height: 10vh;
-    border: 1px solid #2f3d51;
-    border-radius: 8px;
+
+ .p-b {
+     height: 10vh;
+     border: 1px solid #2f3d51;
+     border-radius: 8px;
  }
- .c-t{
-    color: #e3f1f1;
+
+ .c-t {
+     color: #e3f1f1;
  }
- .c-s{
-    color: #55b7c3;
+
+ .c-s {
+     color: #55b7c3;
  }
+
  @media screen and (min-width: 576px) {
      .c-p {
          grid-template-columns: repeat(2, minmax(0, 1fr));

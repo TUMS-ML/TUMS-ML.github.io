@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let scrollPosition = window.scrollY;
 
         sections.forEach((section, index) => {
-            const top = section.offsetTop - 60;
+            const top = section.offsetTop + 10;
             const bottom = top + section.clientHeight;
 
             if (scrollPosition >= top && scrollPosition < bottom) {
