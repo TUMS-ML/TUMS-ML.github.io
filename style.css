@@ -1,5 +1,5 @@
  @import url(https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap);
- 
+
  * {
      margin: 0;
      padding: 0;
@@ -48,9 +48,11 @@
      flex-direction: column;
      align-items: center;
  }
- main section{
-    max-width: 1160px;
+
+ main section {
+     max-width: 1160px;
  }
+
  /* navbar-st */
  .navbar-st {
      direction: rtl;
@@ -73,7 +75,6 @@
      gap: 1.5rem;
      margin: 0;
      width: 1160px;
-    
  }
 
 
@@ -91,7 +92,6 @@
 
  /* sections */
  section {
-     height: 80vh;
      width: 100%;
  }
 
@@ -391,4 +391,82 @@
      .c-p {
          grid-gap: 24px;
      }
+ }
+
+ .w-sec {
+     margin: auto;
+     max-width: 880px;
+     display: flex;
+     flex-direction: column;
+     position: relative;
+     align-items: center;
+ }
+ 
+ .w-t {
+     color: #e3f1f1;
+ }
+
+ .w-s {
+     color: #55b7c3;
+ }
+
+ .w-l {
+     display: flex;
+     flex-direction: column;
+ }
+ .w-list{
+    width: 100%;
+ }
+ .w-list:after {
+     content: "";
+     height: calc(100% - 19vh);
+     width: 1px;
+     position: absolute;
+     right: 0px;
+     top: 20%;
+     border-right: 2px dashed;
+     border-color: #c1caca;
+     z-index: 0;
+ }
+
+ .info-txt {
+    position: relative;
+    right: -27px;
+    align-items: baseline;
+    margin-top: 1rem;
+ }
+
+ .circel-i {
+     width: 9px;
+     height: 9px;
+     border-radius: 50%;
+     background-color: #55b7c3;
+     margin-left: 9px;
+     z-index: 999;
+ }
+
+ .w-i {
+     border: 1px solid #2f3d51;
+     border-radius: 8px;
+     color: #e3f1f1;
+ }
+
+ .w-r {
+     display: flex;
+ }
+
+ .w-w {
+     color: #55b7c3;
+ }
+
+ .w-tr {
+     font-size: 1.3rem;
+     color: #55b7c3;
+ }
+
+ .w-i svg {
+     margin-left: 8px;
+     width: 20px;
+     height: 20px;
+     fill: #55b7c3;
  }
