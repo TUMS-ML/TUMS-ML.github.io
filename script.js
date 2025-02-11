@@ -108,3 +108,25 @@ if (contentDiv && jsonData.length > 0) {
 } else {
     console.error("Element with ID 'c-content' not found or jsonData is empty.");
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    var coll = document.getElementsByClassName("ls_col");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            var content = this.nextElementSibling;
+            var isActive = this.classList.toggle("ls_active");
+
+            for (var j = 0; j < coll.length; j++) {
+                if (coll[j] !== this) {
+                    coll[j].classList.remove("ls_active");
+                    coll[j].nextElementSibling.style.maxHeight = null;
+                }
+            }
+
+            content.style.maxHeight = isActive ? content.scrollHeight + "px" : null;
+        });
+    }
+});
