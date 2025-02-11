@@ -6,7 +6,9 @@
      padding: 0;
      box-sizing: border-box;
  }
-
+ h2{
+    text-align: center;
+ }
  html {
      scroll-behavior: smooth !important;
      overflow-x: hidden !important;
@@ -511,11 +513,6 @@
 
  /* c */
 
-
-
-
-
-
  .ls_col {
      background-color: transparent;
      color: #c9c9c9;
@@ -571,7 +568,7 @@
 
  }
 
- @media (max-width: 520px) {
+ @media (max-width: 827px) {
      .ls_col {
          width: 100%;
      }

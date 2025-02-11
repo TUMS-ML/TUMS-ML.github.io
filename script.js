@@ -130,3 +130,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+function clickHandler() {
+    setTimeout(() => {
+        window.location.href = "https://github.com/Ali-Ghanbarii/";
+    }, 1000);
+}
