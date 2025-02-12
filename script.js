@@ -1,3 +1,17 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const navbar = document.querySelector(".navbar-st");
+    const navbarOffset = navbar.offsetTop; 
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY >= navbarOffset) {
+            navbar.classList.add("fixed-navbar");
+        } else {
+            navbar.classList.remove("fixed-navbar");
+        }
+    });
+});
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll(".navbar-st a");
@@ -131,8 +145,55 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+
+    const faqContainer = document.getElementById("faq-container");
+
+    qadata.forEach((item, index) => {
+        const box = document.createElement("div");
+        box.className = "box mb-3";
+
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "ls_col";
+        button.setAttribute("data-aos", index % 2 === 0 ? "fade-right" : "fade-left");
+        button.textContent = item.title;
+
+        const content = document.createElement("div");
+        content.className = "ls_content";
+        content.style.maxHeight = null;
+
+        const paragraph = document.createElement("p");
+        paragraph.className = "p-4 mt-2";
+        paragraph.textContent = item.dis;
+
+        content.appendChild(paragraph);
+        box.appendChild(button);
+        box.appendChild(content);
+        faqContainer.appendChild(box);
+    });
+
+    var coll = document.getElementsByClassName("ls_col");
+
+    for (var i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            var content = this.nextElementSibling;
+            var isActive = this.classList.toggle("ls_active");
+
+            for (var j = 0; j < coll.length; j++) {
+                if (coll[j] !== this) {
+                    coll[j].classList.remove("ls_active");
+                    coll[j].nextElementSibling.style.maxHeight = null;
+                }
+            }
+
+            content.style.maxHeight = isActive ? content.scrollHeight + "px" : null;
+        });
+    }
+});
+
 function clickHandler() {
     setTimeout(() => {
         window.location.href = "https://github.com/Ali-Ghanbarii/";
-    }, 1000);
+    }, 1800);
 }

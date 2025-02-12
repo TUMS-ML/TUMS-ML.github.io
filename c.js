@@ -4,150 +4,120 @@ const jsonData = [
     "time": "week 1",
     "items": [
       "Installing IDE",
-      "Data: Types, Values, Variables, and Names, Input",
-      "Numbers",
-      "Text Strings",
-      "Using pip"
+      "Variable , Expression , Statement",
+      "Boolean",
+      "Condition",
+      "Function",
+      "While",
+      "for"
     ]
   },
   {
-    "category": "JavaScript",
+    "category": "Python",
     "time": "week 2",
     "items": [
-      "Setting up Environment",
-      "Variables and Data Types",
-      "Functions and Scope",
-      "DOM Manipulation"
+      "Working with Strings",
+      "Working with Lists",
+      "Dictionaries",
+      "Tuples",
+      "Standard Libraries & Other Libraries"
     ]
   },
   {
-    "category": "JavaScript",
+    "category": "Python",
     "time": "week 3",
     "items": [
-      "Objects and Arrays",
-      "ES6 Features",
-      "Event Listeners",
-      "Asynchronous JavaScript"
+      "Lambda , Filter , Map",
+      "Generator Function Yield ",
+      "OOP"
     ]
   },
+
   {
-    "category": "Java",
+    "category": "Prerequisites & Data Preparation",
     "time": "week 4",
     "items": [
-      "Installing JDK",
-      "Variables and Data Types",
-      "Operators and Expressions",
-      "Control Flow Statements"
+      "Preface",
+      "Numpy",
+      "Pandas",
+      "Visualization",
+      "Data Challanges",
+      "Handling Otliers",
+      "Imbalanced Data"
     ]
   },
   {
-    "category": "Java",
+    "category": "Feature Engineering & Regression",
     "time": "week 5",
     "items": [
-      "Object-Oriented Programming",
-      "Classes and Objects",
-      "Inheritance and Polymorphism",
-      "Exception Handling"
+      "Different Features",
+      "Handling Missing Values",
+      "Feature Extraction",
+      "Dimension Reduction",
+      "Feature Selection",
+      "Linear regression",
+      "Optimization & Loss Function",
+      "Polynomial Regression",
+      "Generalization & Regularization"
     ]
   },
   {
-    "category": "HTML & CSS",
+    "category": "Classification",
     "time": "week 6",
     "items": [
-      "HTML Elements and Structure",
-      "CSS Basics and Selectors",
-      "Flexbox and Grid",
-      "Responsive Design"
+      "Logistic Regression",
+      "Cross Validation",
+      "KNN",
+      "SVM",
+      "Navie Bayes",
+      "Decision Tree"
     ]
   },
+
   {
-    "category": "React",
+    "category": "Classification",
     "time": "week 7",
     "items": [
-      "Creating React App",
-      "JSX Syntax",
-      "Components and Props",
-      "State and Lifecycle"
+      "Ensemble Learning",
+      "Random Forest",
+      "AdaBoost",
+      "Gradient Boost",
+      "XGBoost"
     ]
   },
   {
-    "category": "React",
+    "category": "Clustring",
     "time": "week 8",
     "items": [
-      "React Hooks",
-      "React Router",
-      "Managing State with Redux",
-      "Context API"
+      "K-Means",
+      "K-Modes",
+      "K-Prototype",
+      "PCA",
+      "T-SNE",
     ]
   },
   {
-    "category": "Node.js",
+    "category": "MLP & Introduction to Deep Learning",
     "time": "week 9",
     "items": [
-      "Setting up Node.js",
-      "Express.js Basics",
-      "Working with APIs",
-      "Authentication and Authorization"
+      "MLP",
+      "Introduction to Deep Learning"
+
     ]
   },
   {
-    "category": "SQL",
+    "category": "Final Project",
     "time": "week 10",
     "items": [
-      "Introduction to Databases",
-      "SQL Queries and Joins",
-      "Database Normalization",
-      "Stored Procedures"
+      "Project ",
+
     ]
   },
+];
+
+const qadata = [
   {
-    "category": "MongoDB",
-    "time": "week 11",
-    "items": [
-      "NoSQL vs SQL",
-      "MongoDB Setup",
-      "CRUD Operations",
-      "Aggregation Framework"
-    ]
+    title: "سوال اول",
+    dis: "پاسخ سوال اول"
   },
-  {
-    "category": "Django",
-    "time": "week 12",
-    "items": [
-      "Django Installation",
-      "Models and Migrations",
-      "Views and Templates",
-      "Authentication System"
-    ]
-  },
-  {
-    "category": "Vue.js",
-    "time": "week 13",
-    "items": [
-      "Setting up Vue Project",
-      "Vue Components",
-      "Vue Directives",
-      "Vue Router"
-    ]
-  },
-  {
-    "category": "DevOps",
-    "time": "week 14",
-    "items": [
-      "Introduction to DevOps",
-      "CI/CD Pipelines",
-      "Containerization with Docker",
-      "Infrastructure as Code"
-    ]
-  },
-  {
-    "category": "Cybersecurity",
-    "time": "week 15",
-    "items": [
-      "Introduction to Cybersecurity",
-      "Common Vulnerabilities",
-      "Network Security",
-      "Ethical Hacking Basics"
-    ]
-  }
 ];
