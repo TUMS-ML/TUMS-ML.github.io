@@ -17,15 +17,15 @@
  }
 
  body {
-     background-color: rgb(26, 34, 41);
+     background-color: rgb(0 15 16);
      font-family: "Baloo Bhaijaan 2", serif;
      overflow-x: hidden !important;
 
  }
 
  body {
-     --sb-track-color: rgb(26, 34, 41);
-     --sb-thumb-color: #55b7c3;
+     --sb-track-color: rgb(0 15 16);
+     --sb-thumb-color: #b282ff;
      --sb-size: 12px;
  }
 
@@ -64,7 +64,7 @@
  .top {
      top: 0;
      width: 100%;
-     background-color: #55b7c3;
+     background-color: #b282ff;
      height: 5vh;
      display: flex;
      align-items: center;
@@ -83,7 +83,7 @@
      width: 100%;
      padding: 1.6rem .8rem;
      border-bottom: 1px solid #2f3d51;
-     background-color: rgb(26, 34, 41);
+     background-color: rgb(0 15 16);
  }
 
  .navbar-st ul {
@@ -114,7 +114,7 @@
  }
 
  .active {
-     border-bottom: 3px solid #55b7c3;
+     border-bottom: 3px solid #b282ff;
  }
 
  /* sections */
@@ -137,7 +137,7 @@
  }
 
  .svg-fill-primary {
-     fill: #55b7c3;
+     fill: #b282ff;
  }
 
  .hero {
@@ -153,6 +153,18 @@
      display: flex;
      align-items: center;
      justify-content: center;
+ }
+
+ @media (max-width: 768px) {
+     .hero-text {
+         align-items: center !important;
+     }
+     .hero-text p{
+        text-align: center;
+     }
+     .c-data{
+        justify-content: center;
+     }
  }
 
  .container img {
@@ -171,7 +183,7 @@
      background-image: radial-gradient(circle at 50% 50%,
              #0000 0,
              #0000 2px,
-             HSL(210, 22%, 13%) 2px);
+             rgb(0 15 16) 2px);
      background-size: 8px 8px;
  }
 
@@ -179,8 +191,8 @@
      position: relative;
      width: 100%;
      height: 100%;
-     --c: rgb(44, 114, 160);
-     background-color: #000;
+     --c: rgb(215, 106, 248);
+     background-color: #030708;
      background-image: radial-gradient(4px 100px at 0px 235px, var(--c), #0000),
          radial-gradient(4px 100px at 300px 235px, var(--c), #0000),
          radial-gradient(1.5px 1.5px at 150px 117.5px, var(--c) 100%, #0000 150%),
@@ -346,7 +358,7 @@
  }
 
  .upper-text span {
-     color: #55b7c3;
+     color: #b282ff;
      margin-left: 8px;
  }
 
@@ -360,12 +372,12 @@
      display: flex;
      flex-direction: row;
      align-items: center;
-     color: #e67d33;
+     color: #50d5c3;
  }
 
  .c-info span {
      margin-left: 4px;
-     color: #55b7c3;
+     color: #b282ff;
  }
 
  .c-info p {
@@ -389,7 +401,7 @@
      text-decoration: none;
      cursor: pointer;
      color: #2e3b3b;
-     background-color: #55b7c3;
+     background-color: #b282ff;
      padding: .7rem 1.2rem;
      border-radius: 6px;
      font-weight: bold;
@@ -398,7 +410,7 @@
  .button-a:last-of-type {
      color: #e3f1f1;
      background-color: #55b6c32a;
-     border: 1px solid #55b7c3;
+     border: 1px solid #b282ff;
  }
 
  .sec {
@@ -422,7 +434,7 @@
 
  .p-b p {
      margin: 0;
-     color: #e67d33;
+     color: #50d5c3;
      font-size: 1.3rem;
  }
 
@@ -438,7 +450,7 @@
  }
 
  .c-s {
-     color: #55b7c3;
+     color: #b282ff;
  }
 
  @media screen and (min-width: 576px) {
@@ -467,7 +479,7 @@
  }
 
  .w-s {
-     color: #55b7c3;
+     color: #b282ff;
  }
 
  .w-l {
@@ -479,17 +491,7 @@
      width: 100%;
  }
 
- .w-list:after {
-     content: "";
-     height: calc(100% - 23vh);
-     width: 1px;
-     position: absolute;
-     right: 0px;
-     top: 18vh;
-     border-right: 2px dashed;
-     border-color: #c1caca;
-     z-index: 0;
- }
+
 
  .info-txt {
      position: relative;
@@ -502,7 +504,7 @@
      width: 9px;
      height: 9px;
      border-radius: 50%;
-     background-color: #55b7c3;
+     background-color: #b282ff;
      margin-left: 9px;
      z-index: 999;
  }
@@ -518,19 +520,22 @@
  }
 
  .w-w {
-     color: #55b7c3;
+     color: #50d5c3;
+     text-transform: uppercase;
+     font-size: 1.3rem;
+     margin-bottom: 0;
  }
 
  .w-tr {
      font-size: 1.3rem;
-     color: #55b7c3;
+     color: #b282ff;
  }
 
  .w-i svg {
      margin-left: 8px;
-     width: 20px;
-     height: 20px;
-     fill: #e67d33;
+     width: 25px;
+     height: 25px;
+     fill: #50d5c3;
  }
 
 
@@ -582,7 +587,7 @@
  .ls_col:after {
      font-family: "Font Awesome 5 Free";
      content: "\f107";
-     color: #e67d33;
+     color: #50d5c3;
      font-weight: bold;
      float: left;
      margin-left: 5px;
@@ -594,7 +599,7 @@
  }
 
  .ls_content {
-     color: #55b7c3;
+     color: #b282ff;
      max-height: 0;
      overflow: hidden;
      width: 800px;
@@ -650,7 +655,7 @@
      position: relative;
      width: 100%;
      height: 100%;
-     --c: rgb(44, 114, 160);
+     --c: rgb(215, 106, 248);
      background-color: #000;
      background-image: radial-gradient(4px 100px at 0px 235px, var(--c), #0000),
          radial-gradient(4px 100px at 300px 235px, var(--c), #0000),

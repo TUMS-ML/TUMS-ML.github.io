@@ -1,5 +1,5 @@
 .bye{
-    color: #55b7c3;
+    color: #b282ff;
 }
 .btn-container {
     position: relative;
@@ -226,8 +226,8 @@
     border-radius: 6px;
     -webkit-transition: 0.4s ease-in-out;
     transition: 0.4s ease-in-out;
-    background: -webkit-gradient(linear, left top, right top, from(#55b7c3), to(#4badb9));
-    background: linear-gradient(125deg, #55b7c3 50%, #4badb9);
+    background: -webkit-gradient(linear, left top, right top, from(#b282ff), to(#4badb9));
+    background: linear-gradient(125deg, #b282ff 50%, #4badb9);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
