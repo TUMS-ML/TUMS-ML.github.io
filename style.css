@@ -169,7 +169,8 @@
 
  .container img {
      position: relative;
-     z-index: 99999;
+     z-index: 100;
+     opacity: .83;
      border-radius: 10px;
  }
 
